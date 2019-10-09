@@ -8,6 +8,6 @@ class HelloController extends Controller
 {
     public function index(Request $request)
     {
-        return 'Hello World from Controller';
+        return view('hello');
     }
 }
