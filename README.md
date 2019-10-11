@@ -6,10 +6,10 @@
 
 ## Environment
 
-- Windows 6
+- Windows 10
 - Composer 1.9.0
 - Laravel 2.1
-- PHP Artisan 6.1.0
+- PHP Artisan 6.2.0
 - XAMPP (PHP, MySQL, Mercy)
 - Visual Studio Code
 - Git
