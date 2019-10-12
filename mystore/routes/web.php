@@ -5,3 +5,7 @@ Route::get('/', function () {
 });
 
 Route::get('/hello/{name}', 'HelloController@index');
+
+Route::get('/about-us', function () {
+    return 'About us page';
+});
