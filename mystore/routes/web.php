@@ -21,3 +21,15 @@ Route::get('/products/{url}', function ($url) {
 Route::get('/categories/{url?}', function ($url = null) {
     return $url == null ? 'list all categories' : "display $url category";
 })->name('categories');
+
+Route::get('/admin', function () {
+    return 'admin dashboard';
+})->middleware('before');
+
+Route::get('/analytics', function () {
+    return 'analytics dashboard';
+})->middleware('after');
+
+Route::get('/statistics', function () {
+    return 'statistics dashboard';
+})->middleware('before', 'after');
