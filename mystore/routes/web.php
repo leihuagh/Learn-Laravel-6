@@ -33,3 +33,7 @@ Route::get('/analytics', function () {
 Route::get('/statistics', function () {
     return 'statistics dashboard';
 })->middleware('before', 'after');
+
+Route::get('/store', function () {
+    return redirect('admin');
+});
