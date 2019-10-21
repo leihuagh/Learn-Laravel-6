@@ -39,3 +39,4 @@ Route::get('/store', function () {
 });
 
 Route::get('blog/{url}', 'ShowBlogPostController');
+Route::resource('brands', 'BrandController');
