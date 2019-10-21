@@ -20,3 +20,5 @@ Route::get('/products', function () {
 
     return response()->json($products);
 });
+
+Route::apiResource('brands', 'API\BrandController');
