@@ -37,3 +37,5 @@ Route::get('/statistics', function () {
 Route::get('/store', function () {
     return redirect('admin');
 });
+
+Route::get('blog/{url}', 'ShowBlogPostController');
